@@ -54,7 +54,7 @@ transition: .3s linear;
 nav ul ul{
 position: absolute;
 top: 100px;
-border-top: 50px mediumpurple solid;
+border-top: 60px mediumpurple solid;
 opacity: 0;
 visibility: hidden;
 }
@@ -62,9 +62,28 @@ nav ul ul li{
     width: 500px;
     display: list-item;
     position: relative;
-    border: 20px mediumpurple solid;
+    border: 60px mediumpurple solid;
     border-top: none;
 }
+
+
+
+nav ul ul{
+    position: absolute;
+    top: 100px;
+    border-top: 60px mediumpurple solid;
+    opacity: 0;
+    visibility: hidden;
+    }
+    nav ul ul li{
+        width: 500px;
+        display: list-item;
+        position: relative;
+        border: 60px mediumpurple solid;
+        border-top: none;
+    }
+
+
 nav ul ul li a{
     line-height: 50px;
 }
