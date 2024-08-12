@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajand vectores no inicializados</title>
+</head>
+<body>
+
+    <a href="index.html" class="btn">REGRESAR</a>
+    <h1>Llenando el vector</h1>
+    <script>
+    var salario=new Array(5);
+    var aumento=new Array(5);
+    var aumento2=new Array(5);
+    var x=0;//inicializado
+    
+    
+
+//llenar el vector
+    while(x<salario.length) //devuelve el tamaño del arreglo   comprobado
+    {
+    salario[x]=parseFloat(prompt("Ingrese el salario:   "));
+    aumento[x]=salario[x]*1.20;
+    aumento2[x]=salario[x]*1.35;
+   x++;
+    }//fin while
+
+   
+    //mostrando el cont de los arreglos
+    var j=0; //inicializar
+    
+
+
+    document.write("_________________________________________________________<br>");
+    document.write("SALARIO------------------AUMENTO------------------AUMENTO35%<br>");
+    document.write("__________________________________________________________<br>");
+
+    while(j<salario.length)  //comprobando
+    {
+    document.write(salario[j]+"---------------------------------"+aumento[j].toFixed(2)+"---------------------------------"+aumento2[j].toFixed(2));
+    document.write("<br><br>");
+    
+
+
+
+    j++;
+    }
+
+    </script>
+     <a href="index.html"><h3>Regresar al inicio</h3></a>
+</body>
+</html>

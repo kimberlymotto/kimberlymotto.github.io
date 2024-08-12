@@ -76,3 +76,10 @@ nav ul ul ul li{
     top: -50px;
     left: 120px;
 }
+
+.btn{
+	display: inline-block;
+	background-color: lightpink;
+	padding: 15px;
+	text-decoration: none;
+	}

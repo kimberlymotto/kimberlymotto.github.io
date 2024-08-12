@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTRUCTURAS REPEPTITIVAS</title>
+</head>
+<body>
+    <a href="index.html" class="btn">REGRESAR</a>
+    <h1>Imprimiendo el contenido del arreglo</h1>
+    <script>
+
+        opcion=parseInt(prompt("menu \n 1-arreglos \n 2-edades \n 3-conteo")+"<br>")
+        while(opcion<1 || opcion>3)
+        {
+            opcion=parseInt(prompt("ingrese correctamente  1-arreglos \n 2-edades \n 3-conteo")+"<br>")
+        }
+        
+        
+        if(opcion==1)
+        {
+            var edades= [10,18,60,27]
+            var suma=0, promedio=0,opcion;
+            document.write("imprimiendo el contenido arreglos <br>")
+            for (let index = 0; index < edades.length; index++) {
+                document.writeln(edades[index],"-");
+        
+            }
+        
+            
+        }
+        else if(opcion==2)
+        {
+            var edades= [10,18,60,27] 
+            var suma=0, promedio=0,opcion;
+            document.write("utilizandop acumuladores <br>")
+            for (let index = 0; index < edades.length; index++) {
+              suma=suma+edades[index];
+                
+            }
+            promedio=suma/edades.length;
+            document.write("el promedio es:"+promedio);
+        }
+        
+        else if(opcion==3)
+        {
+            var edades= [10,18,60,27]
+            document.write("utilizando conteos");
+            var mayor=0 ,menor=0;
+            for (let index = 0; index < edades.length; index++) {
+           if (edades[index]>=18)
+        
+           {
+           mayor++;
+           
+        
+        
+            
+        }
+        
+        else 
+        menor++;
+        }//fin for
+        document.write("la cantidad de menores a 18 son:",menor,"<br>");
+        document.write("la cantidad de menores a 18 son:",mayor,"<br>");
+           
+        }
+            </script>
+            <br><br><br><br><br><br>
+            <a href="index.html"><h3>Regresar al inicio</h3></a>
+</body>
+</html>

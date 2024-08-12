@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="funciones.js"></script>
+
+</head>
+<body>
+    <a href="index.html" class="btn">REGRESAR</a>
+   <h1>TRABAJANDO CON FUNCIONES</h1> 
+   <script>
+    var opc;
+
+    opc=parseInt(prompt("¿QUE DESEA IMPRIMIR? \n 1-Los dias de la semana \n 2-Frase repetida \n 3-Serie ascendente \n 4-Serie descendente"));
+while(opc<1 || opc>4)
+{
+opc=parseInt(prompt("¿QUE DESEA IMPRIMIR? \n 1-Los dias de la semana \n 2-Frase repetida \n 3-Serie ascendente \n 4-Serie descendente"));
+}
+
+    switch(opc)
+    {
+case 1:
+    {
+document.write("LOS DIAS DE LA SEMANA"); 
+    document.write("<br>");
+    semanita();
+    break;
+    }
+case 2:
+    {
+document.write("FRASE REPETIDA"); 
+    document.write("<br>");
+    frase();
+break;
+    }
+    case 3:
+        {
+    document.write("SERIE ASCENDENTE"); 
+    document.write("<br>");
+    serie();
+    break;
+        }
+
+        default:
+            {
+                
+    document.write("SERIE DESCENDENTE");
+    document.write("<br>"); 
+    serie2();
+            }
+
+
+    }//fin sw
+
+   </script>
+</body>
+</html>

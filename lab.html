@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <h1>Encuesta</h1>
+    <form id="surveyForm">
+        <label for="sex">Sexo:</label>
+        <select id="sex" required>
+            <option value="1">Masculino</option>
+            <option value="2">Femenino</option>
+        </select><br><br>
+
+        <label for="job">Posee trabajo:</label>
+        <select id="job" required>
+            <option value="1">Sí</option>
+            <option value="2">No</option>
+        </select><br><br>
+
+        <label for="salary">Sueldo:</label>
+        <select id="salary" required>
+            <option value="0">0</option>
+            <option value="600">600</option>
+            <option value="2000">2000</option>
+        </select><br><br>
+
+        <label for="age">Edad:</label>
+        <input type="number" id="age" min="18" max="40" required><br><br>
+
+        <button type="button" onclick="addData()">Agregar</button>
+    </form>
+
+    <h2>Resultados</h2>
+    <button onclick="displayResults(1)">Porcentaje de hombres que no trabajan</button>
+    <button onclick="displayResults(2)">Porcentaje de mujeres que no trabajan</button>
+    <button onclick="displayResults(3)">Sueldo promedio de los hombres</button>
+    <button onclick="displayResults(4)">Sueldo promedio de las mujeres</button>
+    <button onclick="displayResults(5)">Edad promedio de los hombres</button>
+    <button onclick="displayResults(6)">Edad promedio de las mujeres</button>
+    <button onclick="displayResults(7)">Mostrar toda la información</button>
+
+    <div id="results"></div>
+
+    <script src="lab.js"></script>
+</body>
+</html>
+
+
+
